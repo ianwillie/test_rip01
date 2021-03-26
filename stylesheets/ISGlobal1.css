@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import url("PTSansReg/stylesheet.css"); /* Google fonts saved in webfonts/PTSansReg/ cf DWCS6 MissingM p145 */
+/* text-align: left/right/center  */
+.tal {text-align: left} .tar {text-align: right;} .tac {text-align: center;}
+
+.TableFullScreen { border: 10px solid #CCCCCC; text-align: center; vertical-align: middle; }
+.linkNoUL { text-decoration: none;}
+.tiny  {font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal; color: red;}
+.arial12 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; }
+.arial16 { font-family: Arial, Helvetica, sans-serif; font-size: 16px; }
+.arial20 { font-family: Arial, Helvetica, sans-serif; font-size: 20px; }
+.arial24 { font-family: Arial, Helvetica, sans-serif; font-size: 24px; }
+.arial28 { font-family: Arial, Helvetica, sans-serif; font-size: 28px; }
+.arial36 { font-family: Arial, Helvetica, sans-serif; font-size: 36px; }
+.arialbold14 { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; }
+.arialbold16 { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; }
+.arialbold18 { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; }
+.arialbold22 { font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; }
+.arialbold24 {font-family: Arial, Helvetica, sans-serif;font-size: 24px;font-weight: bold;}
+.arialbold36 {font-family: Arial, Helvetica, sans-serif;font-size: 36px;font-weight: bold;}
+.arialbold20 {font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;}
+.photoRJust {float: right;}
+.photoLJust {float: left;}
+.ThistleBackground {background-attachment: scroll;background-color: #CCCCCC;background-image:  url(images/Thistle1_300TransV2.gif);background-repeat: no-repeat;background-position: center center;}
+.ThistleFixed {background-attachment: fixed;background-image:  url(images/Thistle/Thistle1_300TransV2.gif);background-repeat: no-repeat;background-position: center 20px;background-color: #CCCCCC;}
+body {background-color: #CCCCCC; background-attachment: fixed;background-image: url(../images/Thistle1_300TransV2.gif);
+    background-position: center center;background-repeat: no-repeat;float: none;border-collapse: collapse;} 
+    
+.closespacepara {   margin-top: 0.3em;margin-bottom: .3em;}
+h2 {    font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 115%;font-weight: normal; }
+h3 {    font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 100%;font-weight: bold;}
+h1 {    font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 130%;font-weight: normal;}
+a:link {color: #0000FF;}a:visited {color: #0000FF;} a:hover {color: #CC0099;}
+ul {    list-style-type: none;}
+.MainTitle {    font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 20px;}
+.arial10 {  font-family: Arial, Helvetica, sans-serif;font-size: 10px;font-weight: normal;}
+.floatL {float: left;}
+.MSNote {color: #CC0000;}
+
+.crumb {    font-family: Geneva, Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;font-weight: normal;}
+/* .crumbAll { font-size: 10px; link: text-decoration: none;} */ /* removes underline */
+.crumbAll { font-size: 10px; text-decoration: none;} /* removes underline NB NB should link: be here as above? */
+.crumbRootname {    font-weight: bold;  font-size: larger;} 
+
+/* for breadcrumb.js  crumAll is a <span class=crumbAll
+    var precrumbAll = "<span class=\"crumbAll\">";
+    var postcrumbAll = "</span>"; 
+    links are controlled by the link property unless that is changed somewhere  so only the crumb separator changes
+    Links look like this in debugger. InOpera to copy the contents of a variable like aaa 
+    In Opera Ctl-Shift-I then set breakpoint & Global tab then Store as Global Variable - then copy and paste 
+    <span class="crumbAll"><span class="crumb"><a href="file:///index.html">LGBTHistoryScotland.org.uk</a></span> -> 
+    <span class="crumb"><a href="file:///media/index.html">Media</a></span> ->   
+      ...
+     <span class="crumb"><a href="file:///media/AcerWinData/AcerIansDocs/GayThings/GCentre/IanWulliesSite/RIP-ISPrivate_HTML5/index.html">RIP-ISPrivate_HTML5</a></span> ->
+      ...     
+      <span class="crumb"><a href="file:///media/AcerWinData/AcerIansDocs/GayThings/GCentre/IanWulliesSite/RIP-ISPrivate_HTML5/IDArc/GD<!DOCTYPE html>
+     467_1/GD467_1_3_31PaisleyBranch/sed_TEST/index.html">Sed_TEST</a></span></span>"
+      LGBTHistoryScotland.org.uk -> Media -> AcerWinData -> AcerIansDocs -> GayThings -> GCentre -> IanWulliesSite -> RIP-ISPrivate_HTML5 -> IDArc -> GD467_1 -> GD467_1_3_31PaisleyBranch -> Sed_TEST
+
+/*table .idarc_index01 {    Which ordershould the .idac & table be in: it does not seem to make any difference but I feel IT IS IMPORTANT! */
+.idarc_index01   {font-family: "Times New Roman", Times, serif ;    font-size: 16px;  text-align: left;
+                    border-collapse:collapse; padding: 0px; border-color:   #999; border-style:solid; border-width:1px; border-spacing:0; }
+.idarc_index01 caption { font-size:20px; font-weight:bold;  font-family: Verdana, Arial, Helvetica, sans-serif; }    
+.idarc_index01 td { border-color:   #999; border-style:solid; border-width:1px; border-collapse: collapse; }
+.idarc_index01 tr:nth-of-type(even) { background-color: rgba(255,255,255,0.3);}
+.idarc_index01 th { text-align: left; font-size:20px; font-weight:bold;  font-family: Verdana, Arial, Helvetica, sans-serif; border-color:    #999; border-style:solid; border-width:1px;}
+    /* Add column styles in table tag */
+    /* cf https://stackoverflow.com/questions/3880248/how-to-style-each-table-cell-in-a-column-via-css#3881054  */
+.idarc_index01 tr td:nth-child(1) {/*color:rgba(0,255,153,1);*/ width:10%;} /* Reference*/
+.idarc_index01 tr td:nth-child(2) {/*font-weight:600;*/  width:15%;} /*Year*/
+.idarc_index01 tr td:nth-child(3)  {font-weight:300; /*color:rgba(255,102,153,1); pink*/  width:60%;} /*Contents*/
+.idarc_index01 tr td:nth-child(4) { font-size:9px;   color: #666;  width:10%;} /*to do*/
+
+/*.idarc_row_col_contents { width: 60%; text-align: left;}
+.idarc_row_col_year {width: 15%;text-align: left;}
+.idarc_row_col_reference {width: 10%;text-align: left;}
+.idarc_row_col_todo {width: 10%;text-align: left;}
+*/
+/* try making the above 4 .idarc_index01 row_col_reference { */
+/* .idarc_index01 .row_col_contents {text-align: left; font-size:24px;}
+.idarc_index01 .row_col_year {text-align: left; font-size:24px;}
+.idarc_index01 .row_col_reference {text-align: left; font-size:24px;}
+.idarc_index01 .row_col_todo {text-align: left; font-size:24px;} */
+/*.idarc_index01 .row_col_th {text-align: left; font-size:24px;}  */
+ 
+/* <style> */
+    .table-div{display:inline; border:2px dotted red;}
+    .tr-div{display:inline; border:2px dotted green;}
+/*    .td-div{display:box;border:2px solid black; }*/
+/*    .td-div{display:box;border:none; }    error box is not a display value*/
+    .td-div{display:inline ;border:none; }
+    .td-div:nth-of-type(even){background-color: rgba(255,255,255,0.2);}
+    .thead-div{display:inline; border:2px dotted blue;}
+    .tbody-div{display:inline; border:2px dotted pink;} 
+    hr{}
+/*  </style> */
